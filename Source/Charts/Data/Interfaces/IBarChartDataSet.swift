@@ -31,6 +31,9 @@ public protocol IBarChartDataSet: IBarLineScatterCandleBubbleChartDataSet
     /// the width used for drawing borders around the bars. If borderWidth == 0, no border will be drawn.
     var barBorderWidth : CGFloat { get set }
 
+    /// corner radius for only at the top of the bars. If topBarCornerRadius == 0, no corner radius will be drawn.
+    var topBarCornerRadius : CGFloat { get set }
+
     /// the color drawing borders around the bars.
     var barBorderColor: NSUIColor { get set }
 

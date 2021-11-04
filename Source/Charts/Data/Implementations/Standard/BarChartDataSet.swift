@@ -143,6 +143,9 @@ open class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet, IBarChartDat
     /// the width used for drawing borders around the bars. If borderWidth == 0, no border will be drawn.
     open var barBorderWidth : CGFloat = 0.0
 
+    /// corner radius for only at the top of the bars. If topBarCornerRadius == 0, no corner radius will be drawn.
+    open var topBarCornerRadius : CGFloat = 0.0
+
     /// the color drawing borders around the bars.
     open var barBorderColor = NSUIColor.black
 
@@ -161,6 +164,7 @@ open class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet, IBarChartDat
         copy.barShadowColor = barShadowColor
         copy.barBorderWidth = barBorderWidth
         copy.barBorderColor = barBorderColor
+        copy.topBarCornerRadius = topBarCornerRadius
         copy.highlightAlpha = highlightAlpha
         return copy
     }
